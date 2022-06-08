@@ -102,9 +102,6 @@ result$refVar
 
 ## References
 
--   Andika, A., Abdullah, S., & Nurrohmah, S. (2019). “Hurdle Negative
-    Binomial Regression Model”. Proceeding of ICSA 2019, p: 57-68.
-    <doi:10.29244/icsa.2019.pp57-68>.
 -   Hilbe, J. M. (2011). Negative Binomial Regression 2nd Edition. New
     York : Cambridge University Press. <doi:10.1017/CBO9780511973420>.
 -   Ntzoufras, I. (2009). Bayesian Modelling Using WinBUGS. New Jersey :
