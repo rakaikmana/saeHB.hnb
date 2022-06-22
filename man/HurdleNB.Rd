@@ -15,7 +15,6 @@ HurdleNB(
   thin = 1,
   burn.in = 1000,
   tau.u = 1,
-  tau.v = 1,
   data
 )
 }
@@ -40,8 +39,6 @@ HurdleNB(
 
 \item{tau.u}{Variance of random effect area for non-zero count of variable interest with default \code{1}}
 
-\item{tau.v}{Variance of random effect area for zero count of variable interest with default \code{1}}
-
 \item{data}{The data frame}
 }
 \value{
@@ -49,6 +46,7 @@ This function returns a list of the following objects:
    \item{Est}{A vector with the values of Small Area mean Estimates using Hierarchical bayesian method }
    \item{refVar}{Estimated random effect variances}
    \item{coefficient}{A dataframe with the estimated model coefficient}
+   \item{alpha}{Dispersion parameter}
    \item{plot}{Trace, Density, Autocorrelation Function Plot of MCMC samples}
 }
 \description{
@@ -63,11 +61,12 @@ data(dataHNB)     # Load dataset
 \donttest{result$Est}          # Small Area mean Estimates
 \donttest{result$refVar}       # Estimated random effect variances
 \donttest{result$coefficient}  # Estimated model coefficient
+\donttest{result$alpha}        # Estimated dispersion parameter
 
 # Load library 'coda' to execute the plot
 # autocorr.plot(result$plot[[3]])    # Generate ACF Plot
 # plot(result$plot[[3]])             # Generate Density and Trace plot
 
-## For data with non-sampled area use dataHNBNS
+## For data with non-sampled area use dataHNBNs
 
 }
